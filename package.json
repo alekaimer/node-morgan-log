@@ -1,0 +1,33 @@
+{
+  "name": "node-morgan-log",
+  "version": "1.0.0",
+  "description": "Salva log de requisições em arquivo",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --exec npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alekaimer/node-morgan-log.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Morgan",
+    "Express",
+    "Log"
+  ],
+  "author": "Alexandre Kaimer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alekaimer/node-morgan-log/issues"
+  },
+  "homepage": "https://github.com/alekaimer/node-morgan-log#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "morgan-body": "^2.6.9",
+    "nodemon": "^3.1.7"
+  }
+}
