@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const morganBody = require("morgan-body");
 const fs = require("fs");
 const path = require("path");
+const moment = require("moment");
 
 const app = express();
 const port = 3000;
@@ -10,7 +11,11 @@ const port = 3000;
 app.use(bodyParser.json());
 
 const log = fs.createWriteStream(
-  path.join(__dirname, "./logs", "express.log"),
+  path.join(
+    __dirname,
+    "./logs",
+    `express-${moment().format("YYYY-MM-DD")}.log`
+  ),
   {
     flags: "a",
   }
